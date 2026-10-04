@@ -62,9 +62,9 @@ namespace hft6odev1
                     //yenibox[i].Click += new System.EventHandler(this.EventHandlerButton_Click);
                     if (i + j < 4)
                     {
-                        yenibox[ss].Image = Image.FromFile(@"E:\9puzzlephoto\" + hangifotograf.ToString() + ".jpg");
+                        yenibox[ss].Image = Image.FromFile(Application.StartupPath + @"\..\..\Görseller\Ana Görseller\" + hangifotograf.ToString() + ".jpg");
                     }
-                    else yenibox[ss].Image = Image.FromFile(@"E:\9puzzlephoto\9.jpg");
+                    else yenibox[ss].Image = Image.FromFile(Application.StartupPath + @"\..\..\Görseller\Ana Görseller\9.jpg");
 
                     positionx += 335;
 
@@ -87,7 +87,7 @@ namespace hft6odev1
                     {
                         gcc = yenibox[selected].Text.ToString();
                         yenibox[selected].Image = yenibox[selected - 3].Image;
-                        yenibox[selected - 3].Image = Image.FromFile(@"E:\9puzzlephoto\" + 9 + ".jpg");
+                        yenibox[selected - 3].Image = Image.FromFile(Application.StartupPath + @"\..\..\Görseller\Ana Görseller\" + 9 + ".jpg");
                         selected = Convert.ToInt32(yenibox[selected - 3].Text);
                     }
                     break;
@@ -97,7 +97,7 @@ namespace hft6odev1
                     {
                         gcc = yenibox[selected].Text.ToString();
                         yenibox[selected].Image = yenibox[selected + 3].Image;
-                        yenibox[selected + 3].Image = Image.FromFile(@"E:\9puzzlephoto\" + 9 + ".jpg");
+                        yenibox[selected + 3].Image = Image.FromFile(Application.StartupPath + @"\..\..\Görseller\Ana Görseller\" + 9 + ".jpg");
                         selected = Convert.ToInt32(yenibox[selected + 3].Text);
                     }
                     break;
@@ -107,7 +107,7 @@ namespace hft6odev1
                     {
                         gcc = yenibox[selected].Text.ToString();
                         yenibox[selected].Image = yenibox[selected + 1].Image;
-                        yenibox[selected + 1].Image = Image.FromFile(@"E:\9puzzlephoto\" + 9 + ".jpg");
+                        yenibox[selected + 1].Image = Image.FromFile(Application.StartupPath + @"\..\..\Görseller\Ana Görseller\" + 9 + ".jpg");
                         selected = Convert.ToInt32(yenibox[selected + 1].Text);
                     }
 
@@ -118,7 +118,7 @@ namespace hft6odev1
                     {
                         gcc = yenibox[selected].Text.ToString();
                         yenibox[selected].Image = yenibox[selected - 1].Image;
-                        yenibox[selected - 1].Image = Image.FromFile(@"E:\9puzzlephoto\" + 9 + ".jpg");
+                        yenibox[selected - 1].Image = Image.FromFile(Application.StartupPath + @"\..\..\Görseller\Ana Görseller\" + 9 + ".jpg");
                         selected = Convert.ToInt32(yenibox[selected - 1].Text);
                     }
                     break;
